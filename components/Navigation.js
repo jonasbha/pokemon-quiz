@@ -5,7 +5,9 @@ const Navigation = () => {
         <nav>
             <ul>
                 <li>
-                    <Link href="/">Hjem</Link>
+                    <Link href="/" passHref>
+                        <a className="first">Hjem</a>
+                    </Link>
                 </li>
                 <li>
                     <Link href="/pokemon-quiz">Pokemon Quiz</Link>

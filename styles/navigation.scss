@@ -1,6 +1,16 @@
 nav {
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+
     ul {
         display: flex;
         gap: 1rem;
+        margin: 0;
+        padding: 0.5rem;
+        list-style: none;
+    }
+
+    .first {
+        color: red;
     }
 }

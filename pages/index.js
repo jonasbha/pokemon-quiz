@@ -11,10 +11,6 @@ export default function Home() {
       <h1>
         Welcome to Pokemon API
       </h1>
-
-      <footer>
-    
-      </footer>
     </>
   )
 }

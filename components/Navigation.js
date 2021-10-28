@@ -10,7 +10,10 @@ const Navigation = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/pokemon-quiz">Pokemon Quiz</Link>
+                    <Link href="/quiz">Get</Link>
+                </li>
+                <li>
+                    <Link href="/quiz/create">Post</Link>
                 </li>
             </ul>
         </nav>

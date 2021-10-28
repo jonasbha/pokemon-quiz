@@ -41,8 +41,15 @@ export default function handler(req, res) {
     
     if (req.method == 'POST') {
         const data = req.body;
-        quiz.push(data);
-        res.status(201).json({success: true, data: quiz});
+        console.log(req.body);
+        if (!data?.question) {
+            res
+            .status(400)
+            .json({success: false, error:'Fyll ut all nødvendig data.'});
+        } else {
+            quiz.push(data);
+            res.status(201).json({success: true, data: quiz});
+        }
     } else if (req.method == 'PUT') {
         res.status(405).end()
     } else {

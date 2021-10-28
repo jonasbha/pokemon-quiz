@@ -8,7 +8,7 @@ const Quiz = () => {
     const getQuizes = async () => {
 
         try {
-            const response = await axios.get('/api/pokemon-quiz');
+            const response = await axios.get('/api/quiz');
 
             if (response?.data?.success) {
                 setQuiz(response.data.data);
